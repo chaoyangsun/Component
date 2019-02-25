@@ -1,5 +1,6 @@
 package com.android.component;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        ARouter.getInstance().build("/account/login").navigation();
+        ARouter.getInstance().build("/login/login").navigation();
     }
 
     public void pay(View view) {

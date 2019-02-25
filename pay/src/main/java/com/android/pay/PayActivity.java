@@ -11,7 +11,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.android.componentbase.ServiceFactory;
 
-@Route(path = "/android/pay")
+@Route(path = "/pay/pay")
 public class PayActivity extends AppCompatActivity {
 
     @Override
@@ -24,10 +24,10 @@ public class PayActivity extends AppCompatActivity {
                 ((TextView)(findViewById(R.id.pay_content))).setText(content);
             }
         }
-        share();
+        pay();
     }
 
-    private void share(){
+    private void pay(){
         if (ServiceFactory.getInstance().getAccountService().isLogin()){
             Toast.makeText(this, "支付成功", Toast.LENGTH_SHORT).show();
         }else{
@@ -35,7 +35,7 @@ public class PayActivity extends AppCompatActivity {
         }
     }
 
-    public void shareLogin(View view){
-        ARouter.getInstance().build("/account/login").navigation();
+    public void payLogin(View view){
+        ARouter.getInstance().build("/login/login").navigation();
     }
 }

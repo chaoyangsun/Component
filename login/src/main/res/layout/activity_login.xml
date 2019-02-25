@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="这里是登录界面：未登录"
+        android:text="登录界面：未登录"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:onClick="login"
+        android:textSize="25sp"
         android:text="登录" />
 
     <Button
@@ -31,13 +32,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:onClick="exit"
+        android:textSize="25sp"
         android:text="退出" />
 
     <Button
-        android:id="@+id/btn_login_share"
+        android:id="@+id/btn_login_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:onClick="share"
-        android:text="去分享组件" />
+        android:onClick="pay"
+        android:textSize="25sp"
+        android:text="去支付" />
 </LinearLayout>
